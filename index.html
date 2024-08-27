@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off">
+        <div id="suggestions" class="suggestions"></div>
+        <button id="getWeatherBtn">Get Weather</button>
+        <div id="weatherInfo" class="hidden">
+            <div class="location">
+                <h1 id="cityName"></h1>
+                <p id="countryName"></p>
+            </div>
+            <div class="weather-info">
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="./assets/weather-91.png" alt="Weather Icon" height="20px" width="20px">
+                </div>
+                <div class="weather-details">
+                    <h2 id="temperature"></h2>
+                    <p id="feelsLike"></p>
+                    <p id="condition"></p>
+                    <p id="visibility"></p>
+                    <p id="humidity"></p>
+                    <p id="pressure"></p>
+                </div>
+            </div>
+            <div class="wind-info">
+                <p id="windSpeed"></p>
+                <p id="windGust"></p>
+                <p id="windDirection"></p>
+            </div>
+            <div class="cloud-info">
+                <p id="cloudCover"></p>
+            </div>
+            <div class="sun-info">
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
