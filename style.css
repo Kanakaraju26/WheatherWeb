@@ -100,7 +100,10 @@ button:hover {
     overflow-y: auto;
     background-color: #fff;
     position: absolute;
-    width: 400px;
+    width: 350px;
+}
+@media screen and (max-width:500px){
+    .suggestions { width: 90%;}
 }
 
 .suggestion-item {
